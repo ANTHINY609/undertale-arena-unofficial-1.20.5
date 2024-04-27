@@ -1,0 +1,13 @@
+#By Nebulirion
+
+#say reset move ....
+
+execute if entity @s[advancements={ut:chr/undyne/lv20=true},scores={chr=3}] run function ut:choose/undyne_skin
+
+execute store result score -clearcount store run clear @s carrot_on_a_stick[minecraft:custom_data={chaos_buster:1b}] 1
+execute if score -clearcount store matches 1.. run give @s minecraft:carrot_on_a_stick[minecraft:custom_data={mp_move:1b,chaos_buster:1b,cost:100},minecraft:custom_model_data=246,minecraft:item_name='{"text":"","color":"yellow","bold":true,"extra":[{"translate":"chr.asriel.mp","italic":false,"color":"white"}]}',minecraft:lore=['{"translate":"dsc.mpmove","italic":false,"color":"aqua"}','{"text":""}','{"translate":"chr.asriel.mp1","italic":false,"color":"white"}','{"translate":"chr.asriel.mp2","italic":false,"color":"white"}','{"translate":"chr.asriel.mp3","italic":false,"color":"white"}','""','{"translate":"dsc.mpcost","with":[100],"italic":false,"color":"aqua"}'],minecraft:attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",slot:mainhand,amount:-10.0d,operation:add_value,uuid:[I; 3249, 753, 26789, 26048]},{type:"generic.attack_speed",name:"generic.attack_speed",slot:mainhand,amount:-4.0d,operation:add_value,uuid:[I; 3249, 753, 26789, 26087]}],show_in_tooltip:false},minecraft:hide_additional_tooltip={}] 1
+
+execute store result score -clearcount store run clear @s carrot_on_a_stick[minecraft:custom_data={save:1b}] 1
+execute if score -clearcount store matches 1.. run give @s minecraft:carrot_on_a_stick[minecraft:custom_data={dt_move:1b,save:1b},minecraft:custom_model_data=12,minecraft:item_name='{"text":"","color":"yellow","bold":true,"extra":[{"translate":"chr.frisk.dt","italic":false,"color":"white"}]}',minecraft:lore=['{"translate":"dsc.dtmove","italic":false,"color":"red"}','{"text":""}','{"translate":"chr.frisk.dt1","italic":false,"color":"white"}','{"translate":"chr.frisk.dt2","italic":false,"color":"white"}','{"translate":"chr.frisk.dt3","italic":false,"color":"white"}','{"translate":"chr.frisk.dt4","italic":false,"color":"white"}'],minecraft:attribute_modifiers={modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",slot:mainhand,amount:-10.0d,operation:add_value,uuid:[I; 3249, 753, 26789, 26048]}],show_in_tooltip:false},minecraft:hide_additional_tooltip={}] 1
+
+execute if data entity @s Inventory[{components:{"minecraft:custom_data":{dummy_charge:1b,is_knife:0b}}}] run function ut:move/dummy_charge/display_f

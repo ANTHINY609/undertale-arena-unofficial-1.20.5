@@ -1,0 +1,7 @@
+#By Nebulirion
+
+clear @s carrot_on_a_stick[minecraft:custom_data={undyne_skin:1b}]
+
+execute if score @s undyne_skin matches 1 run item replace entity @s container.7 with minecraft:carrot_on_a_stick[minecraft:custom_data={undyne_skin:1b},minecraft:custom_model_data=111,minecraft:item_name='{"translate":"chr.undyne.spn2","italic":false,"bold":true}',minecraft:lore=['{"text":""}','{"translate":"chr.undyne.sp1","italic":false,"color":"white"}','{"translate":"chr.undyne.sp2","italic":false,"color":"white"}'],minecraft:attribute_modifiers:{modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",slot:mainhand,amount:-10.0d,operation:add_value,uuid:[I;123,124,125,126]}],show_in_tooltip:false},minecraft:hide_additional_tooltip={}]
+
+execute unless score @s undyne_skin matches 1 run item replace entity @s container.7 with minecraft:carrot_on_a_stick[minecraft:custom_data={undyne_skin:1b},minecraft:custom_model_data=110,minecraft:item_name='{"translate":"chr.undyne.spn1","italic":false,"bold":true}',minecraft:lore=['{"text":""}','{"translate":"chr.undyne.sp1","italic":false,"color":"white"}','{"translate":"chr.undyne.sp2","italic":false,"color":"white"}'],minecraft:attribute_modifiers:{modifiers:[{type:"generic.attack_damage",name:"generic.attack_damage",slot:mainhand,amount:-10.0d,operation:add_value,uuid:[I;123,124,125,126]}],show_in_tooltip:false},minecraft:hide_additional_tooltip={}]

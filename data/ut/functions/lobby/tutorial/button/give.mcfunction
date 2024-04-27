@@ -1,0 +1,3 @@
+#By Nebulirion
+
+item replace entity @s[advancements={ut:other/tut/root=true}] container.5 with minecraft:carrot_on_a_stick[minecraft:custom_data={leave_tut:1b,cd_time:20},minecraft:custom_model_data=113,minecraft:item_name='{"translate":"tut.quitbutton","italic":false,"bold":true}',minecraft:lore=['{"text":""}','{"translate":"tut.quitbutton1","italic":false,"color":"white"}','{"translate":"tut.quitbutton2","italic":false,"color":"white"}']]
